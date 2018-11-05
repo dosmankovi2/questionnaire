@@ -1,5 +1,4 @@
-# questionnaire
-Questionnaire API
+# Questionnaire API
 
 Technology:
   - GO

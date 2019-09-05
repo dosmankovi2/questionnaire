@@ -12,6 +12,8 @@ type Question struct {
 	gorm.Model
 	Expression     string           `json:"expression"`
 	QuestionTypeID int              `jgorm:"ForeignKey:id" json:"question_type_id"`
+	//delete this prop
+	QuestionRate   int				`json:"question_rate"`
 	QuestionType   QuestionType     `json:"question_type"`
 	Choices        []QuestionChoice `json:"question_choices" gorm:"many2many:choices_elements"`
 }
